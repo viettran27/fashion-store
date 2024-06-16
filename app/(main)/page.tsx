@@ -1,10 +1,11 @@
-
-'use client'
+import Banner from '@/features/home/components/banner'
+import Brand from '@/features/home/components/brand'
 
 const Home = () => {
   return (
     <div>
-      Home Page
+      <Banner />
+      <Brand />
     </div>
   )
 }
