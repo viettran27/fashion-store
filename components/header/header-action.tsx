@@ -1,30 +1,26 @@
-"use client";
+'use client'
 
-import { CircleUserRound, Search, ShoppingCart } from "lucide-react";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
-import { DropdownMenuItem } from "../ui/dropdown-menu";
+import { CircleUserRound, Search, ShoppingCart } from 'lucide-react'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu'
+import { DropdownMenuItem } from '../ui/dropdown-menu'
 
-import Link from "next/link";
-import { Input } from "../ui/input";
+import Link from 'next/link'
+import { Input } from '../ui/input'
 
 const HeaderAction = () => {
-
-  return ( 
+  return (
     <>
       <Search className="size-5 cursor-pointer md:hidden" />
       <div className="hidden md:block relative w-full max-w-[500px]">
         <Search className="size-5 absolute top-1/2 translate-y-[-50%] left-2" />
-        <Input 
-          placeholder="Search for products..."
-          className="bg-gray-200 pl-10 rounded-2xl"
-        />
+        <Input placeholder="Search for products..." className="bg-gray-200 pl-10 rounded-2xl" />
       </div>
-      <Link href={"/cart"}>
-        <ShoppingCart className="size-5 cursor-pointer"/>
+      <Link href={'/cart'}>
+        <ShoppingCart className="size-5 cursor-pointer" />
       </Link>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <CircleUserRound className="size-5 cursor-pointer"/>
+          <CircleUserRound className="size-5 cursor-pointer" />
         </DropdownMenuTrigger>
         <DropdownMenuContent className="min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md">
           <DropdownMenuItem>
@@ -36,7 +32,7 @@ const HeaderAction = () => {
         </DropdownMenuContent>
       </DropdownMenu>
     </>
-   );
+  )
 }
- 
-export default HeaderAction;
+
+export default HeaderAction
