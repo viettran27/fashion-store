@@ -1,56 +1,47 @@
-"use client";
+'use client'
 
-import { ChevronDown, Menu } from "lucide-react";
+import { ChevronDown, Menu } from 'lucide-react'
 
-import { MenuType, Route, RouteContainer } from "@/types/route";
-import Link from "next/link";
-import { Url } from "next/dist/shared/lib/router/router";
+import { MenuType, Route, RouteContainer } from '@/types/route'
+import Link from 'next/link'
+import { Url } from 'next/dist/shared/lib/router/router'
 
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "../ui/dropdown-menu";
-import { Sheet, SheetTrigger, SheetContent, SheetHeader } from "../ui/sheet";
-import { Button } from "../ui/button";
-import {
-  Collapsible,
-  CollapsibleTrigger,
-  CollapsibleContent,
-} from "@radix-ui/react-collapsible";
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from '../ui/dropdown-menu'
+import { Sheet, SheetTrigger, SheetContent, SheetHeader } from '../ui/sheet'
+import { Button } from '../ui/button'
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from '@radix-ui/react-collapsible'
 
 const routes = [
   {
     type: MenuType.DROPDOWN,
-    categories: "Shop",
+    categories: 'Shop',
     options: [
       {
-        href: "/men",
-        categories: "Men",
+        href: '/men',
+        categories: 'Men'
       },
       {
-        href: "/women",
-        categories: "Woman",
-      },
-    ],
+        href: '/women',
+        categories: 'Woman'
+      }
+    ]
   },
   {
     type: MenuType.SINGLE,
-    href: "/on-sales",
-    categories: "On Sale",
+    href: '/on-sales',
+    categories: 'On Sale'
   },
   {
     type: MenuType.SINGLE,
-    href: "/new-arrivals",
-    categories: "New Arrivals",
+    href: '/new-arrivals',
+    categories: 'New Arrivals'
   },
   {
     type: MenuType.SINGLE,
-    href: "/brands",
-    categories: "Brands",
-  },
-];
+    href: '/brands',
+    categories: 'Brands'
+  }
+]
 
 const Navigation = () => {
   return (
@@ -63,7 +54,7 @@ const Navigation = () => {
               <Menu className="size-4" />
             </Button>
           </SheetTrigger>
-          <SheetContent side={"left"}>
+          <SheetContent side={'left'}>
             <SheetHeader>
               <div className="text-2xl font-bold">Shop VM</div>
             </SheetHeader>
@@ -80,20 +71,18 @@ const Navigation = () => {
                           </div>
                         </CollapsibleTrigger>
                         <CollapsibleContent>
-                          {route.options?.map(
-                            (option: Route, index: number) => {
-                              return (
-                                <Link key={index} href={option.href as Url}>
-                                  <div className="font-medium text-md py-1 ml-4 hover:bg-gray-100 px-2 rounded-md">
-                                    {option.categories}
-                                  </div>
-                                </Link>
-                              );
-                            }
-                          )}
+                          {route.options?.map((option: Route, index: number) => {
+                            return (
+                              <Link key={index} href={option.href as Url}>
+                                <div className="font-medium text-md py-1 ml-4 hover:bg-gray-100 px-2 rounded-md">
+                                  {option.categories}
+                                </div>
+                              </Link>
+                            )
+                          })}
                         </CollapsibleContent>
                       </Collapsible>
-                    );
+                    )
 
                   default:
                     return (
@@ -102,7 +91,7 @@ const Navigation = () => {
                           {route.categories}
                         </div>
                       </Link>
-                    );
+                    )
                 }
               })}
             </div>
@@ -128,28 +117,26 @@ const Navigation = () => {
                       return (
                         <Link key={index} href={option.href as Url}>
                           <DropdownMenuItem>
-                            <div className="font-medium text-sm">
-                              {option.categories}
-                            </div>
+                            <div className="font-medium text-sm">{option.categories}</div>
                           </DropdownMenuItem>
                         </Link>
-                      );
+                      )
                     })}
                   </DropdownMenuContent>
                 </DropdownMenu>
-              );
+              )
 
             default:
               return (
                 <Link key={index} href={route.href as Url}>
                   <div className="font-medium text-sm">{route.categories}</div>
                 </Link>
-              );
+              )
           }
         })}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation

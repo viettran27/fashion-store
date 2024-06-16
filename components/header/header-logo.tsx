@@ -1,13 +1,13 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const HeaderLogo = () => {
-  return ( 
+  return (
     <div className="hidden md:block">
-      <Link href={"/"}>
+      <Link href={'/'}>
         <div className="text-2xl font-bold">Shop VM</div>
       </Link>
     </div>
-   );
+  )
 }
 
 export default HeaderLogo

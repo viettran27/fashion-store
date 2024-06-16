@@ -1,7 +1,7 @@
-import MaxWidthContent from "../max-width-content";
-import HeaderLogo  from "./header-logo";
-import Navigation  from "./navigation"
-import HeaderAction from "./header-action";
+import MaxWidthContent from '../max-width-content'
+import HeaderLogo from './header-logo'
+import Navigation from './navigation'
+import HeaderAction from './header-action'
 
 const Header = ({ className }: { className?: string }) => {
   return (
@@ -16,7 +16,7 @@ const Header = ({ className }: { className?: string }) => {
         </div>
       </MaxWidthContent>
     </nav>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
