@@ -1,10 +1,9 @@
-
-'use client'
+import Banner from '@/features/home/components/banner'
 
 const Home = () => {
   return (
     <div>
-      Home Page
+      <Banner />
     </div>
   )
 }
