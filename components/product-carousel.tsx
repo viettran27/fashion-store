@@ -55,7 +55,7 @@ const ProductCarousel = ({ title }: Props) => {
   return (
     <MaxWidthContent className="flex flex-col items-center">
       <div className="w-full">
-        <div className="text-center font-bold text-3xl">{title.toUpperCase()}</div>
+        <div className="text-center font-bold text-2xl md:text-3xl">{title.toUpperCase()}</div>
         <CarouselCustom products={products} />
       </div>
       <Button variant={'outline'} className={'mx-auto w-full mt-8 rounded-2xl md:px-20 md:w-auto'}>

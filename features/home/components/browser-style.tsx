@@ -32,23 +32,27 @@ const STYLES = [
 
 const BrowserStyle = () => {
   return (
-    <MaxWidthContent className="bg-gray-300 rounded-2xl p-12">
-      <div className="text-3xl font-bold text-center pb-8 w-[250px] mx-auto md:w-auto">BROWSER BY DRESS STYLE</div>
-      <div className="gap-4 grid grid-rows-4 md:grid-rows-2 md:grid-cols-3">
-        {STYLES.map((style, index) => (
-          <div className={cn('relative h-[250px]', style.className)}>
-            <div className="absolute top-[10%] left-[5%] font-bold text-xl">{style.alt}</div>
-            <Image
-              key={index}
-              className="w-full h-full object-fill rounded-2xl"
-              src={style.src}
-              alt="casual"
-              quality={100}
-              width={400}
-              height={400}
-            />
-          </div>
-        ))}
+    <MaxWidthContent>
+      <div className="bg-gray-300 rounded-2xl p-6 md:p-8 lg:p-12">
+        <div className="text-2xl md:text-3xl font-bold text-center pb-8 w-[200px] mx-auto md:w-auto">
+          BROWSER BY DRESS STYLE
+        </div>
+        <div className="gap-4 grid grid-rows-4 md:grid-rows-2 md:grid-cols-3">
+          {STYLES.map((style, index) => (
+            <div key={index} className={cn('relative h-[250px]', style.className)}>
+              <div className="absolute top-[10%] left-[5%] font-bold text-xl">{style.alt}</div>
+              <Image
+                key={index}
+                className="w-full h-full object-fill rounded-2xl"
+                src={style.src}
+                alt="casual"
+                quality={100}
+                width={400}
+                height={400}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </MaxWidthContent>
   )
