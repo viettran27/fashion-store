@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ProductDescription from './product_description'
+import ProductDescription from './product-description'
 
 type Props = {
   imgSrc: string
