@@ -6,7 +6,7 @@ import CustomerReview from '@/features/home/components/customer-review'
 
 const Home = () => {
   return (
-    <div className="space-y-12 pb-20">
+    <div className="space-y-12">
       <div>
         <Banner />
         <Brand />
