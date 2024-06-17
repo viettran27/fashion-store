@@ -39,7 +39,7 @@ const BrowserStyle = () => {
         </div>
         <div className="gap-4 grid grid-rows-4 md:grid-rows-2 md:grid-cols-3">
           {STYLES.map((style, index) => (
-            <div className={cn('relative h-[250px]', style.className)}>
+            <div key={index} className={cn('relative h-[250px]', style.className)}>
               <div className="absolute top-[10%] left-[5%] font-bold text-xl">{style.alt}</div>
               <Image
                 key={index}
