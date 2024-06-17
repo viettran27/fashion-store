@@ -1,5 +1,6 @@
 import CarouselCustom from './carousel-custom'
 import MaxWidthContent from './max-width-content'
+import { Button } from './ui/button'
 
 type Props = {
   title: string
@@ -52,11 +53,14 @@ const products = [
 
 const ProductCarousel = ({ title }: Props) => {
   return (
-    <MaxWidthContent>
+    <MaxWidthContent className="flex flex-col items-center">
       <div className="w-full">
         <div className="text-center font-bold text-3xl">{title.toUpperCase()}</div>
         <CarouselCustom products={products} />
       </div>
+      <Button variant={'outline'} className={'mx-auto w-full mt-8 rounded-2xl md:px-20 md:w-auto'}>
+        View All
+      </Button>
     </MaxWidthContent>
   )
 }
