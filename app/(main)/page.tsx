@@ -1,4 +1,3 @@
-import ProductCard from '@/components/product-card'
 import ProductCarousel from '@/components/product-carousel'
 import Banner from '@/features/home/components/banner'
 import Brand from '@/features/home/components/brand'
