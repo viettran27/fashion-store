@@ -33,7 +33,7 @@ const STYLES = [
 const BrowserStyle = () => {
   return (
     <MaxWidthContent>
-      <div className="bg-gray-300 rounded-2xl p-12">
+      <div className="bg-gray-300 rounded-2xl p-6 md:p-8 lg:p-12">
         <div className="text-2xl md:text-3xl font-bold text-center pb-8 w-[200px] mx-auto md:w-auto">
           BROWSER BY DRESS STYLE
         </div>
