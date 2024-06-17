@@ -22,7 +22,7 @@ const ProductDescription = ({
   discountClassName,
   title,
   ratingValue,
-  sizeRating = 20,
+  sizeRating = 16,
   price,
   oldPrice
 }: Props) => {
@@ -30,13 +30,13 @@ const ProductDescription = ({
 
   return (
     <div className={cn('space-y-1', className)}>
-      <h3 className={cn('text-lg font-bold', titleClassName)}>{title}</h3>
+      <h3 className={cn('text-sm md:text-lg font-bold', titleClassName)}>{title}</h3>
       <div className={cn('flex items-center', starClassName)}>
         <Rating count={5} value={ratingValue} edit={false} size={sizeRating} className="mr-2" />
-        <span className="text-sm">{ratingValue}</span>
-        <span className="text-sm">/5</span>
+        <span className="text-xs">{ratingValue}</span>
+        <span className="text-xs">/5</span>
       </div>
-      <div className={cn('flex gap-3 items-center text-xl', priceClassName)}>
+      <div className={cn('flex gap-3 items-center text-lg md:text-xl', priceClassName)}>
         <span className="font-bold">${price.toLocaleString('en-US')}</span>
         {oldPrice && oldPrice !== price && (
           <>

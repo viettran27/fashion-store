@@ -32,7 +32,7 @@ const BRANDS = [
 const Brand = () => {
   return (
     <div className="bg-black">
-      <MaxWidthContent className="flex justify-between py-6 gap-y-6 flex-wrap">
+      <MaxWidthContent className="flex justify-between py-6 gap-y-6 gap-x-4 flex-wrap">
         {BRANDS.map((brand, index) => (
           <Image key={index} src={brand.src} alt={brand.alt} />
         ))}
