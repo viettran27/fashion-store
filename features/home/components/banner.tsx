@@ -1,4 +1,4 @@
-import banner from '@/assets/home/banner.jpg'
+import banner from '@/assets/home/banner/banner.jpg'
 import { Button } from '@/components/ui/button'
 
 import Image from 'next/image'

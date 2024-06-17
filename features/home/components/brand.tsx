@@ -1,8 +1,8 @@
-import Versace from '@/assets/home/versace.svg'
-import Zara from '@/assets/home/zara.svg'
-import Gucci from '@/assets/home/gucci.svg'
-import Prada from '@/assets/home/prada.svg'
-import CalvinKlein from '@/assets/home/calvinklein.svg'
+import Versace from '@/assets/home/brand/versace.svg'
+import Zara from '@/assets/home/brand/zara.svg'
+import Gucci from '@/assets/home/brand/gucci.svg'
+import Prada from '@/assets/home/brand/prada.svg'
+import CalvinKlein from '@/assets/home/brand/calvinklein.svg'
 import Image from 'next/image'
 import MaxWidthContent from '@/components/max-width-content'
 
