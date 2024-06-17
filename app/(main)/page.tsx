@@ -1,4 +1,4 @@
-import ProductCard from '@/components/product_card/product-card'
+import ProductCard from '@/components/product-card'
 import Banner from '@/features/home/components/banner'
 import Brand from '@/features/home/components/brand'
 
