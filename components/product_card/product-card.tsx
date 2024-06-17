@@ -1,12 +1,19 @@
-import product1 from '@/assets/fake_product/product1.jpg'
 import Image from 'next/image'
 import ProductDescription from '../product_description'
 
-const ProductCard = () => {
+type Props = {
+  imgSrc: string
+  title: string
+  ratingValue: number
+  price: number
+  oldPrice?: number
+}
+
+const ProductCard = ({ imgSrc, title, ratingValue, price, oldPrice }: Props) => {
   return (
     <div className="space-y-2">
-      <Image src={product1} alt={'alt'} className="rounded-2xl size-64" width={200} height={200} />
-      <ProductDescription title="T-Shirt with Tape Details" ratingValue={3.5} price={120} oldPrice={140} />
+      <Image src={imgSrc} alt={'alt'} className="rounded-2xl size-64 object-cover" width={200} height={200} />
+      <ProductDescription title={title} ratingValue={ratingValue} price={price} oldPrice={oldPrice} />
     </div>
   )
 }
