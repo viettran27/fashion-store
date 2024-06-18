@@ -1,8 +1,6 @@
-import { cn } from '@/lib/utils'
-
 import { Check } from 'lucide-react'
-
-import Rating from './rating'
+import Rating from './product-rating'
+import { cn } from '@/lib/utils'
 
 type Props = {
   userName: string
@@ -11,7 +9,7 @@ type Props = {
   className?: string
 }
 
-const Review = ({ userName, review, rating, className }: Props) => {
+const ProductReview = ({ userName, review, rating, className }: Props) => {
   return (
     <div
       className={cn(
@@ -31,4 +29,4 @@ const Review = ({ userName, review, rating, className }: Props) => {
   )
 }
 
-export default Review
+export default ProductReview

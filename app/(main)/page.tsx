@@ -1,8 +1,8 @@
-import ProductCarousel from '@/components/product-carousel'
 import Banner from '@/features/home/components/banner'
 import Brand from '@/features/home/components/brand'
 import BrowserStyle from '@/features/home/components/browser-style'
 import CustomerReview from '@/features/home/components/customer-review'
+import ProductCarousel from '@/components/product/product-carousel'
 
 const Home = () => {
   return (

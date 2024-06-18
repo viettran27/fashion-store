@@ -1,7 +1,8 @@
 'use client'
 
-import { cn } from '@/lib/utils'
 import React, { useState } from 'react'
+
+import { cn } from '@/lib/utils'
 
 interface RatingProps {
   className?: string
@@ -63,7 +64,7 @@ const EmptyStar = ({ size = 24, color = '#000000' }: IconProps) => {
   )
 }
 
-const Rating: React.FC<RatingProps> = ({
+const ProductRating: React.FC<RatingProps> = ({
   className,
   count,
   value,
@@ -166,4 +167,4 @@ const Rating: React.FC<RatingProps> = ({
   return <div className={cn('flex', className)}>{stars}</div>
 }
 
-export default Rating
+export default ProductRating

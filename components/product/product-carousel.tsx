@@ -1,6 +1,6 @@
-import CarouselCustom from './carousel-custom'
-import MaxWidthContent from './max-width-content'
-import { Button } from './ui/button'
+import { Button } from '../ui/button'
+import CarouselCustom from '../carousel-custom'
+import MaxWidthContent from '../max-width-content'
 
 type Props = {
   title: string

@@ -1,8 +1,9 @@
 'use client'
 
 import { Carousel, CarouselContent, CarouselItem } from './ui/carousel'
+
 import Autoplay from 'embla-carousel-autoplay'
-import ProductCard from './product-card'
+import ProductCard from './product/product-card'
 
 type Product = {
   imgSrc: string

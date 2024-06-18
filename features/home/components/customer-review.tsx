@@ -1,6 +1,7 @@
-import MaxWidthContent from '@/components/max-width-content'
-import Review from '@/components/review'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
+
+import MaxWidthContent from '@/components/max-width-content'
+import ProductReview from '@/components/product/product-review'
 
 const REVIEWS = [
   {
@@ -34,7 +35,12 @@ const CustomerReview = () => {
         <CarouselContent>
           {REVIEWS.map((review, index) => (
             <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">
-              <Review className="max-w-full" userName={review.name} review={review.content} rating={review.rating} />
+              <ProductReview
+                className="max-w-full"
+                userName={review.name}
+                review={review.content}
+                rating={review.rating}
+              />
             </CarouselItem>
           ))}
         </CarouselContent>
