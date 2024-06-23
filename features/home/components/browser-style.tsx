@@ -11,22 +11,22 @@ const STYLES = [
   {
     src: casual,
     alt: 'Casual',
-    className: 'md:row-span-1 md:col-span-1 md:h-[300px]'
+    className: 'md:row-span-1 md:col-span-1 md:h-[250px]'
   },
   {
     src: formal,
     alt: 'Formal',
-    className: 'md:row-span-1 md:col-span-2 md:h-[300px]'
+    className: 'md:row-span-1 md:col-span-2 md:h-[250px]'
   },
   {
     src: party,
     alt: 'Party',
-    className: 'md:row-span-2 md:col-span-2 md:h-[300px]'
+    className: 'md:row-span-2 md:col-span-2 md:h-[250px]'
   },
   {
     src: gym,
     alt: 'Gym',
-    className: 'md:row-span-2 md:col-span-1 md:h-[300px]'
+    className: 'md:row-span-2 md:col-span-1 md:h-[250px]'
   }
 ]
 
@@ -39,7 +39,7 @@ const BrowserStyle = () => {
         </div>
         <div className="gap-4 grid grid-rows-4 md:grid-rows-2 md:grid-cols-3">
           {STYLES.map((style, index) => (
-            <div key={index} className={cn('relative h-[250px]', style.className)}>
+            <div key={index} className={cn('relative h-[200px]', style.className)}>
               <div className="absolute top-[10%] left-[5%] font-bold text-xl">{style.alt}</div>
               <Image
                 key={index}
