@@ -1,8 +1,7 @@
 'use client'
 
 import { CircleUserRound, Search, ShoppingCart } from 'lucide-react'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu'
-import { DropdownMenuItem } from '../ui/dropdown-menu'
+import { DropdownMenuItem, DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '../ui/dropdown-menu'
 
 import Link from 'next/link'
 import { Input } from '../ui/input'
@@ -22,7 +21,7 @@ const HeaderAction = () => {
         <DropdownMenuTrigger asChild>
           <CircleUserRound className="size-5 cursor-pointer" />
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md">
+        <DropdownMenuContent>
           <DropdownMenuItem>
             <div className="font-medium text-sm">Sign in</div>
           </DropdownMenuItem>

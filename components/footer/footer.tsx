@@ -4,10 +4,10 @@ import NewSeletter from './new-sletter'
 
 const Footer = () => {
   return (
-    <div className="mt-8">
+    <footer className="mt-8">
       <NewSeletter />
       <FooterInfo />
-    </div>
+    </footer>
   )
 }
 
