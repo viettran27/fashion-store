@@ -6,7 +6,7 @@ type Props = {
 }
 
 const MaxWidthContent = ({ children, className }: Props) => {
-  return <div className={cn('max-w-screen-2xl container', className)}>{children}</div>
+  return <div className={cn('max-w-screen-2xl px-4 md:container', className)}>{children}</div>
 }
 
 export default MaxWidthContent
