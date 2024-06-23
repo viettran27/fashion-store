@@ -8,7 +8,7 @@ const FooterInfo = () => {
       <MaxWidthContent className="pt-24 grid md:grid-cols-3 gap-4 pb-4">
         <div className="space-y-2">
           <div className="text-2xl font-bold">SHOP VM</div>
-          <div className="text-sm">
+          <div className="text-xs md:text-sm">
             We have clothes that suits your style and which you’re proud to wear. From women to men.
           </div>
           <div className="flex gap-2">
@@ -19,32 +19,32 @@ const FooterInfo = () => {
         </div>
         <div className="grid grid-cols-4 col-span-2 gap-4 justify-between">
           <div className="space-y-2">
-            <div className="text-lg font-medium">Company</div>
-            <div className="text-sm">About</div>
-            <div className="text-sm">Features</div>
-            <div className="text-sm">Works</div>
-            <div className="text-sm">Career</div>
+            <div className="text-sm md:text-lg font-medium">Company</div>
+            <div className="text-xs md:text-sm">About</div>
+            <div className="text-xs md:text-sm">Features</div>
+            <div className="text-xs md:text-sm">Works</div>
+            <div className="text-xs md:text-sm">Career</div>
           </div>
           <div className="space-y-2">
-            <div className="text-lg font-medium">Help</div>
-            <div className="text-sm">Customer Suppor</div>
-            <div className="text-sm">Delivery Details</div>
-            <div className="text-sm">Terms & Conditions</div>
-            <div className="text-sm">Privacy Policy</div>
+            <div className="text-sm md:text-lg font-medium">Help</div>
+            <div className="text-xs md:text-sm">Customer Suppor</div>
+            <div className="text-xs md:text-sm">Delivery Details</div>
+            <div className="text-xs md:text-sm">Terms & Conditions</div>
+            <div className="text-xs md:text-sm">Privacy Policy</div>
           </div>
           <div className="space-y-2">
-            <div className="text-lg font-medium">FAQ</div>
-            <div className="text-sm">Account</div>
-            <div className="text-sm">Manage Deliveries</div>
-            <div className="text-sm">Orders</div>
-            <div className="text-sm">Payments</div>
+            <div className="text-sm md:text-lg font-medium">FAQ</div>
+            <div className="text-xs md:text-sm">Account</div>
+            <div className="text-xs md:text-sm">Manage Deliveries</div>
+            <div className="text-xs md:text-sm">Orders</div>
+            <div className="text-xs md:text-sm">Payments</div>
           </div>
           <div className="space-y-2">
-            <div className="text-lg font-medium">Resources</div>
-            <div className="text-sm">Free eBooks</div>
-            <div className="text-sm">Development Tutorial</div>
-            <div className="text-sm">How to - Blog</div>
-            <div className="text-sm">Youtube Playlist</div>
+            <div className="text-sm md:text-lg font-medium">Resources</div>
+            <div className="text-xs md:text-sm">Free eBooks</div>
+            <div className="text-xs md:text-sm">Development Tutorial</div>
+            <div className="text-xs md:text-sm">How to - Blog</div>
+            <div className="text-xs md:text-sm">Youtube Playlist</div>
           </div>
         </div>
       </MaxWidthContent>
