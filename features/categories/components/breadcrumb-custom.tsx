@@ -10,8 +10,14 @@ import {
 import { uppercase } from '@/utils/uppercase'
 import { useParams } from 'next/navigation'
 
-const BreadCrumbCustom = () => {
-  const { type: paths }: { type: string[] } = useParams()
+type Props = {
+  paths?: string[]
+}
+
+const BreadCrumbCustom = ({ paths }: Props) => {
+  let { type: lastPaths }: { type: string[] } = useParams()
+  lastPaths = paths ? paths : lastPaths
+
   return (
     <Breadcrumb>
       <BreadcrumbList>
@@ -19,11 +25,11 @@ const BreadCrumbCustom = () => {
           <BreadcrumbLink href="/">Home</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
-        {paths
-          ? paths.map((path, index) => (
+        {lastPaths
+          ? lastPaths.map((path, index) => (
               <BreadcrumbItem key={index}>
                 <BreadcrumbLink href={`/${path}`}>{uppercase(path)}</BreadcrumbLink>
-                {index !== paths.length - 1 && <BreadcrumbSeparator />}
+                {index !== lastPaths.length - 1 && <BreadcrumbSeparator />}
               </BreadcrumbItem>
             ))
           : null}
